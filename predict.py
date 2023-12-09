@@ -12,7 +12,7 @@ from sklearn.pipeline import Pipeline
 from sklearn.svm import SVC
 from sklearn.tree import DecisionTreeClassifier
 
-import matplotlib; matplotlib.use('Qt5Agg')
+import matplotlib #;  matplotlib.use('Qt5Agg')
 
 df = pd.read_csv("./data/comments_stratified_balanced.csv")
 df = df[["username", "reported_adhd", "comment"]]
